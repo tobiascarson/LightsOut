@@ -1,0 +1,20 @@
+<html>
+<head>
+<script type="text/javascript" src="LightsOut.js"></script>
+<script type="text/javascript">
+function draw(){
+	new LightsOut(document.getElementById("canvas"));
+}
+</script>
+<style>
+	body{
+		text-align: center;
+	}
+</style>
+</head>
+<body onload="draw();">
+<canvas id="canvas" width="400" height="600"></canvas>
+<br/>
+<span>Hex version of lights out game (click til all the lights are out).  Ported from  <a href="http://gdreflections.com/2011/02/hexagonal-grid-math.html">http://gdreflections.com/2011/02/hexagonal-grid-math.html</a></span> 
+</body>
+</html>
