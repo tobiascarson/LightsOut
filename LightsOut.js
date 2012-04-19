@@ -7,22 +7,22 @@ var LightsOut = function(canvas){
 	//CONSTANTS
 	var ON 				= 1;
 	var OFF				= 0;
-	var NUM_HEX_CORNERS	= 6;
+	var NUM_HEX_CORNERS		= 6;
 	
 	//DEFAULTS
 	var board			= [
-						  [ -1, ON, ON, ON, -1 ], 
-						  [ ON, ON, ON, ON, ON ], 
-						  [ ON, ON, ON, ON, ON ],
-						  [ -1, -1, ON, -1, -1 ] 
-						  ];	
+					  [ -1, ON, ON, ON, -1 ], 
+					  [ ON, ON, ON, ON, ON ], 
+					  [ ON, ON, ON, ON, ON ],
+					  [ -1, -1, ON, -1, -1 ] 
+					  ];	
 	var onColor			= "lightGreen";
-	var offColor		= "whiteSmoke";
-	var lineColor		= "black";
-	var cellRadius		= 50;
+	var offColor			= "whiteSmoke";
+	var lineColor			= "black";
+	var cellRadius			= 50;
 
-	var boardHeight		= board.length;
-	var boardWidth		= board[0].length;
+	var boardHeight			= board.length;
+	var boardWidth			= board[0].length;
 
 	//start graphics a little below the top of the canvas
 	var graphics = canvas.getContext("2d");
